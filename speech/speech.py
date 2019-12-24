@@ -46,15 +46,14 @@ def respond(voice_data):
 def screxii_speak(audio_string):
     tts = gTTS(text=audio_string, lang='en')
     r = random.randint(1, 1000000)
-    audio_file = 'audio' + str(r) + '.mp3'
+    audio_file = 'audio' + str(r) + '.mp3'      #creating an audio file name
     tts.save(audio_file)
-    playsound.playsound(audio_file)
+    playsound.playsound(audio_file)             #Screxii talks back
     print(audio_string)
     os.remove(audio_file) 
 
 #time.sleep(1)
-print('How can I help you?')
+screxii_speak('How can I help you?')
 while 1:
     voice_data = record_audio()
-    #print("Given input: ", voice_data)
     respond(voice_data)

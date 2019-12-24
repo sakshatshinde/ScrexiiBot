@@ -1,4 +1,4 @@
-import os, discord
+import os, discord, speech.speech
 from dotenv import load_dotenv
 from discord.ext import commands
 
