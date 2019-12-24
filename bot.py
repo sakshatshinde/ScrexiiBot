@@ -7,7 +7,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 #client = discord.Client()
-bot = commands.Bot(command_prefix="!", description='A discord bot which can talk')
+bot = commands.Bot(command_prefix="!", description='A discord bot which can listen to your rambling')
 
 @bot.event
 async def on_ready():

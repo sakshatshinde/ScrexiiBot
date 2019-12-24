@@ -1,5 +1,5 @@
 # ScrexiiBot
- A discord bot which can talk
+ A discord bot which can listen to your rambling
 
 ## Installation
 
