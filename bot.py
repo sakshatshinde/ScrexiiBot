@@ -1,4 +1,4 @@
-import os, discord, random
+import os, discord
 from dotenv import load_dotenv
 from discord.ext import commands
 
@@ -21,3 +21,4 @@ async def on_member_join(member):
         f'Hieee {member.name}, welcome to my Discord server!'
     )
 
+bot.run(TOKEN)
