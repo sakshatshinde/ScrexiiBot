@@ -3,7 +3,9 @@
 
 ## Installation
 
-- Make sure you have [python 3.6](https://www.python.org/downloads/) or above installed
+- Make sure you have [python 3.7](https://www.python.org/downloads/) or above installed
+- Install [FFMPEG](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg) 
+- Add FFMPEG to your $PATH (Environment variable) 
 - Clone the github repository
 - Extract the zip
 - Open a terminal in the project directory & run the following command
