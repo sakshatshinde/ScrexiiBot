@@ -1,6 +1,5 @@
 import os, discord, random
 from dotenv import load_dotenv
-from content.quotes import *
 from discord.ext import commands
 
 #Storing API keys safely.
