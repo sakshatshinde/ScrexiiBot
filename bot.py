@@ -10,7 +10,6 @@ from discord.utils import get
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-#client = discord.Client()
 bot = commands.Bot(command_prefix="!", description='A discord bot which can listen to your rambling')
 
 @bot.event
@@ -124,7 +123,7 @@ async def play(ctx, url: str):
 
     voice.play(discord.FFmpegPCMAudio("song.mp3"), after=lambda e: print("Song done!")) #playing the song
     voice.source = discord.PCMVolumeTransformer(voice.source)
-    voice.source.volume = 0.80
+    voice.source.volume = 0.80      #volume
 
     nname = name.rsplit("-", 2)
     await ctx.send(f"Playing: {nname[0]}")
