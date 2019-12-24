@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 ## Usage
 
 ```python 
-python bot.py
+$ python bot.py
 ```
 
 ## Contributing
