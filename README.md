@@ -13,7 +13,7 @@
 - Open a terminal in the project directory & run the following command
 
 ```sh
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ## Usage
