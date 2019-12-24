@@ -38,6 +38,8 @@ def respond(voice_data):
             screxii_speak('Opening up the map for ' + location)
     if 'leave' in voice_data:
         exit()
+    else :
+        screxii_speak('Ask me something')
 
 def screxii_speak(audio_string):
     tts = gTTS(text=audio_string, lang='en')
@@ -48,7 +50,7 @@ def screxii_speak(audio_string):
     print(audio_string)
     os.remove(audio_file) 
 
-time.sleep(1)
+#time.sleep(1)
 print('How can I help you?')
 while 1:
     voice_data = record_audio()
