@@ -22,24 +22,26 @@ def record_audio(ask = False):
 
 def respond(voice_data):
     if 'what is your name' in voice_data:
-        screxii_speak('My name is Screxy')
+        return screxii_speak('My name is Screxy')
     if 'what time is it' in voice_data:
         screxii_speak(ctime())
     if 'search' in voice_data:
         search = record_audio('What do you want to search for?')
         url = 'https://google.com/search?q=' + search
         webbrowser.get().open(url)
-        screxii_speak('Here is what I found for ' + search)
+        return screxii_speak('Here is what I found for ' + search)
     if 'find location' in voice_data:
         location = record_audio('What location?')
         if location != '':
             url = 'https://google.com/maps/place/' + location + '/&amp;'
             webbrowser.get().open(url)
-            screxii_speak('Opening up the map for ' + location)
+            return screxii_speak('Opening up the map for ' + location)
+        else :
+            return screxii_speak('I don\'t know where that is')
     if 'leave' in voice_data:
         exit()
     else :
-        screxii_speak('Ask me something')
+        return screxii_speak('Ask me something')
 
 def screxii_speak(audio_string):
     tts = gTTS(text=audio_string, lang='en')
