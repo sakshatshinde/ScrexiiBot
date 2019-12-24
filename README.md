@@ -1,6 +1,8 @@
 # ScrexiiBot
  A discord bot which can listen to your rambling
 
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+
 ## Installation
 
 - Make sure you have [python 3.7](https://www.python.org/downloads/) or above installed
@@ -10,7 +12,7 @@
 - Extract the zip
 - Open a terminal in the project directory & run the following command
 
-```bash
+```sh
 pip install -r requirements.txt
 ```
 
