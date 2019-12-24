@@ -18,7 +18,7 @@ $ pip install -r requirements.txt
 
 ## Usage
 
-```python 
+```sh 
 $ python bot.py
 ```
 
